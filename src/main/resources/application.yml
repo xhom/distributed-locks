@@ -1,0 +1,25 @@
+server:
+  port: 8890
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: distributed-locks
+
+#基于Redis的分布式锁配置
+redisson:
+  #单节点模式
+  single:
+    clientName: MyRedissonLock
+    address: redis://127.0.0.1:6379
+    database: 0
+    password: Dfh3ffqOh8eZhJII
+
+#ZooKeeper配置
+zookeeper:
+
+
